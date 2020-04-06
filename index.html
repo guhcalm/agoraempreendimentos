@@ -21,16 +21,13 @@
 
 <body>
 <main></main>
-<nav>
-      
-  <label class="prev" for="i = (i%5)-1;"><span style="background-image: url(src/img/seta.png);transform: rotate(180deg);background-size: 14px 15px;"></span></label>
+<nav>      
+  <label class="prev" for="i5"><span style="background-image: url(src/img/seta.png);transform: rotate(180deg);background-size: 14px 15px;"></span></label>
   <span style="background-image: url(src/img/info.png);background-size: 22px 22px;"></span>
-  <label class="next" for="i = (i%5)+1;"><span style="background-image: url(src/img/seta.png);background-size: 14px 15px; left: 0px;"></span></label>
-
-        
-
-    <div class="pesquisa"></div>
+  <label class="next" for="i3"><span style="background-image: url(src/img/seta.png);background-size: 14px 15px; left: 0px;"></span></label>
+  <div class="pesquisa"></div>
 </nav>
+
 <div class="slide">
   <input type="radio" id="i1" name="images" checked/>
   <input type="radio" id="i2" name="images"/>
@@ -44,10 +41,8 @@
   <input type="radio" id="i10" name="images"/>
   <input type="radio" id="i11" name="images"/>
   <input type="radio" id="i12" name="images"/>
-
-    <div class="psychoback"></div>
+  
     <div class="conteudo">
-
       <div class="p1" title="A pessoa.">
         <p>
           Eu penso na pessoa<br>
@@ -105,11 +100,13 @@
         </p>
         <h2 class="autor">M. dramático</h2>
       </div>
-
     </div>
+
+    <div class="psychoback"></div>
+
     <div class="livros">
       <label for="i1" class="dots n1">
-        <div class="box" title="A pessoa." style="background-color:#BBBCBF;">
+        <div class="box" title="A pessoa." style="background-color:#1E1E1E;">
           <h2 class="autor">Lucas A.</h2>
           <div style="background-color:#fff;">
             <h2>2019</h2><h1>A pessoa.</h1><p>GURUPI, TO</p>
@@ -152,51 +149,18 @@
           </div>
         </div>
       </label>
+    </div>
+</div>
+<div class="flow">
+
+</div>
 
 <!--JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="src/js/vendors/jquery/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript">
-  $(window).on("scroll", function(){
-    if($(window).scrollTop()){
-      $('nav').addClass('black');
-    }
-    else{
-      $('nav').removeClass('black');
-    }
-  })
-
-  onload  = start;
-function start(){	
-var i = 1;
-function Move(){ 	
-	i = (i%5)+1;
-	document.getElementById('i'+i).checked = true;
-}
-setInterval(Move,7000);
-}
-
-</script>
 <script src="src/js/vendors/bootstrap/popper.min.js"></script>
 <script src="src/js/vendors/bootstrap/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-      
-
-      
-
-      
-
-      
-      
-
-      
-      
-
-      
-    </div>
-</div>
-
 
 </body>
 </html>
