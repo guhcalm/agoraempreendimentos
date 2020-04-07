@@ -11,6 +11,7 @@ nav{
     position: absolute;
     height: 30px;
     width: 100%;
+    max-width: 100%;
     background-color: #f1f1f1;
     box-shadow: none;
     opacity: .7;
@@ -43,10 +44,9 @@ nav .pesquisa{
     z-index: 1;
 }
 .slide{
-    display: flex;
+    display: block;
     position: relative;
-    height: 960px;
-    width: 100%;
+    max-width: 100%;
     background-color: #fff;
 }
 .psychoback{
@@ -55,36 +55,36 @@ nav .pesquisa{
     height: 600px;
     width: 80%;
     right: 0;
+    top: 0;
     background-color: #000;
     background-image: url('../img/astro.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 1;
+    z-index: 0;
 }
 .conteudo{
     display: block;
-    position: absolute;
-    height: 600px;
+    position: relative;
+    min-height: 600px;
     min-width: 350px;
     max-width: 30%;
     padding: 90px 20px 30px 20px;
-    top: 0;
-    left: 0;
-    background-color: #fff;
     z-index: 1;
 }
 .conteudo div{display: none;}
 .conteudo div p{
     font-size: 20;
 }
-.slide .livros{
+.livros{
     display: flex;
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: 0;
+    max-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 370px;
     overflow: hidden;
-    background-color: #BBBCBF;
     z-index: 1;
 }
 .slide .livros .box{
@@ -97,15 +97,12 @@ nav .pesquisa{
 .slide .livros .box div{
     display: block;
     position: absolute;
-    min-height: 190px;
     width: 182px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 5px;
+    padding: 25px 5px 25px 5px;
     text-align: center;
-    vertical-align: middle;
-    
 }
 
 p{
@@ -125,30 +122,6 @@ h1{
     font-size: 20px;
 }
 
-#i1:checked ~ .conteudo{background: #fff;}
-#i1:checked ~ .conteudo .p1{display: inline;} 
-#i1:checked ~ .livros{background: #BBBCBF;}
-
-#i2:checked ~ .conteudo{background: #FEF46C;}
-#i2:checked ~ .conteudo .p2{display: inline;}
-#i2:checked ~ .livros{background: #AC958F;}
-
-#i3:checked ~ .conteudo{background: #F89E37;}
-#i3:checked ~ .conteudo .p3{display: inline;}
-#i3:checked ~ .livros{background: #F175AE;}
-
-#i4:checked ~ .conteudo{background: #286BB5;}
-#i4:checked ~ .conteudo .p4{display: inline;}
-#i4:checked ~ .livros{background: #ED3B2C;}
-
-#i5:checked ~ .conteudo{background: #006AFF;}
-#i5:checked ~ .conteudo .p5{display: inline;}
-#i5:checked ~ .livros{background: #010290;}
-
-#i6:checked ~ .conteudo{background: #fff;}
-#i6:checked ~ .conteudo .p6{display: inline;}
-#i6:checked ~ .livros{background: #fff;}
-
 .livros label label span{
     display: block;
     position: absolute;
@@ -161,4 +134,113 @@ h1{
     border: solid 2px #000;
     opacity: 1;
     z-index: 3;
+}
+.flow{
+    display: block;
+    position: relative;
+    height: 220px;
+    width: 100%;
+    background-color: #FFFEFE;
+}
+.flow p,
+.flow h1,
+.flow h2{
+    font-family: "Relative-Book-Web", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    margin:0;
+    color: #1E1E1E;
+    font-weight: 530;
+}
+.flow p{
+    font-size: 12px;
+} 
+.flow .contact h2{
+    font-size: 15px;
+    font-family: "Relative-Book-Web", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.flow h1{
+    font-size: 30px;
+    font-family: 'Pinyon Script', cursive;
+} 
+.flow .apr{
+    position: absolute;
+    top: 0;
+    width: 60%;
+    left: 5%;
+}
+.flow .contact{
+    position: absolute;
+    top: 0;
+    width: 10%;
+    right: 7%;
+}
+.flow .apr,
+.flow .contact{
+    top: 50%;
+    transform: translateY(-50%);
+}
+#i1:checked ~ .conteudo{background: #fff;}
+#i1:checked ~ .conteudo .p1{display: inline;} 
+#i1:checked ~ .livros{background: #1E1E1E;}
+#i1:checked ~ .flow{background: #fff; }
+
+#i2:checked ~ .conteudo{background: #FEF46C;}
+#i2:checked ~ .conteudo .p2{display: inline;}
+#i2:checked ~ .livros{background: #AC958F;}
+#i2:checked ~ .flow{background: #FEF46C;color: #FFFEFE;}
+
+#i3:checked ~ .conteudo{background: #F89E37;}
+#i3:checked ~ .conteudo .p3{display: inline;}
+#i3:checked ~ .livros{background: #F175AE;}
+#i3:checked ~ .flow{background: #F89E37;color: #FFFEFE;}
+
+#i4:checked ~ .conteudo{background: #286BB5;}
+#i4:checked ~ .conteudo .p4{display: inline;}
+#i4:checked ~ .livros{background: #ED3B2C;}
+#i4:checked ~ .flow{background: #286BB5;color: #FFFEFE;}
+
+#i5:checked ~ .conteudo{background: #006AFF;}
+#i5:checked ~ .conteudo .p5{display: inline;}
+#i5:checked ~ .livros{background: #010290;}
+#i5:checked ~ .flow{background: #006AFF;color: #FFFEFE;}
+
+#i6:checked ~ .conteudo{background: #fff;}
+#i6:checked ~ .conteudo .p6{display: inline;}
+#i6:checked ~ .livros{background: #fff;}
+#i6:checked ~ .flow{background: #fff;}
+
+@media screen and (max-width: 767px) {
+    .slide{
+        position: relative;
+        width: 100%;
+        background-color: #fff;
+    }
+    .psychoback{
+        display: block;
+        position: relative;
+        height: 450px;
+        width: 100%;
+    }
+
+    .conteudo{
+        display: block;
+        position: relative;
+        min-height: 200px;
+        max-height: 650px;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 90px 20px 30px 20px;
+        top: 0px;
+        left: 0;
+        background-color: #fff;
+        z-index: 1;
+    }
+    .livros{
+        display: flex;
+        position: relative;
+        width: 100%;
+        top: 0px;
+        left: 0;
+
+    }
 }
