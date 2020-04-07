@@ -138,7 +138,7 @@ h1{
 .flow{
     display: block;
     position: relative;
-    height: 220px;
+    min-height: 220px;
     width: 100%;
     background-color: #FFFEFE;
 }
@@ -243,4 +243,23 @@ h1{
         left: 0;
 
     }
+    .flow{
+        padding: 30px;
+    }
+    .flow .apr{
+        position: relative;
+        width: 100%;
+        left: 0;
+        margin-bottom: 50px;
+    }
+    .flow .contact{
+        position: relative;
+        width: 100%;
+        right: 0;
+    }
+    .flow .apr,
+    .flow .contact{
+    top: 0%;
+    transform: translateY(-0%);
+}
 }
