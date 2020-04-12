@@ -25,7 +25,6 @@ nav span{
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-position: center;
-    border: solid 2px #fff;
     opacity: .37;
     z-index: 1;
 }
