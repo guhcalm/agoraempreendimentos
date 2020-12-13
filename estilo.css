@@ -165,7 +165,9 @@ header {
                 position: relative;
                 content: "VAMOS LA ❯";  
             }
+          
             
+        /*    
     .gradient {
         position: absolute;
         top: 0;
@@ -187,6 +189,7 @@ header {
         background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
         background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
         }
+        */
 /*utilitario
 .utilitario {
     display: none;
