@@ -236,8 +236,7 @@ header {
             }
 */
 /*main*/
-#video{
-    
+#video{ 
     text-align: center;
     height: 350px;
     background-color: #A5A5A5;
@@ -389,6 +388,7 @@ footer {
         ul { width: 90%; }
     */
     /*main*/
+    #video{ height: 250px; }
     /*venda*/
     #comentarios span { font-size: 16px; }
     #comentarios p { padding: 60px 20px; font-size: 12px; }
