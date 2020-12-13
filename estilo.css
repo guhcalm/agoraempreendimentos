@@ -394,7 +394,7 @@ footer img {
 
 @media screen and (max-width: 768px) {
     nav { width: 90%; top: 15px; }
-        .logo { width: 32px; height: 32px; }
+        .logo { width: 60px; height: 60px; }
         nav a { padding: 4px 8px; }
     .captura { padding-top: 120px; padding-bottom: 70px; width: 90%; }
         h1, h2, h3 { padding-top: 8px; padding-bottom: 8px; }
