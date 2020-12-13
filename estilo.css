@@ -95,7 +95,7 @@ header {
             display: inline-block;
             position: absolute;
             padding: 7px 17px;
-            background-color: #AB4C46;
+            background-color: #e50914;
             border-radius: 3px;
             top: 0px;
             right: 0px;
@@ -151,7 +151,7 @@ header {
                 width: 30%;
                 height: 100%;
                 color: white;
-                background-color: #AB4C46;
+                background-color: #e50914;
                 font-size: 25px;
                 display: flex;
                 align-items: center;
@@ -176,17 +176,17 @@ header {
             .input a::after {
                 position: relative;
                 content: "VAMOS LA ❯";  
-            }
+            }/*
     .gradient {
         position: absolute;
         top: 0;
         bottom: 0;
         right: 0;
         left: 0;
-        /*
+        
         background: #202020;
         opacity: 0.25;
-        */
+        
         
         background: rgba(0,0,0,.5);
         background-image: -webkit-gradient(linear,left bottom,left top,color-stop(50%,rgba(0,0,0,0)),to(rgba(0,0,0,.7))),radial-gradient(50% 100%,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%);
@@ -203,7 +203,7 @@ header {
         background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
       
     }
-        
+    */    
 /*utilitario
 .utilitario {
     display: none;
@@ -360,7 +360,7 @@ input[type="radio"] {
     #i1:checked ~ main #dot1,
 	#i2:checked ~ main #dot2,
 	#i3:checked ~ main #dot3{
-        background-color:  #AB4C46;
+        background-color:  #e50914;
         opacity: .5;
     }
 footer {
