@@ -349,3 +349,10 @@ footer {
     filter: contrast(500%);
 */
 
+
+@media screen and (max-width: 1024px) {
+
+    .captura {
+        width: 90%;
+    }
+}
