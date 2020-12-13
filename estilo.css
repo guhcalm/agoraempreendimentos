@@ -38,6 +38,17 @@ table,
     width: 100%;
     height: 100%;
 }
+
+.limite::before {
+    content: "";
+    width: 100%;
+    border-bottom: .5px solid black;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    position: absolute;
+}
 /*Filtro*/
 body {
     background: linear-gradient(to bottom, rgb(250, 2250, 2250), rgb(240, 240, 240));
@@ -74,6 +85,7 @@ header {
             position: absolute;
             background-color: #AB4C46;
             background-image: url('imagens/logo.jpg');
+            background-size: cover;
             width: 100px;
             height: 100px;
         }
@@ -165,9 +177,6 @@ header {
                 position: relative;
                 content: "VAMOS LA ❯";  
             }
-          
-            
-        /*    
     .gradient {
         position: absolute;
         top: 0;
@@ -189,7 +198,7 @@ header {
         background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
         background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
         }
-        */
+        
 /*utilitario
 .utilitario {
     display: none;
@@ -234,22 +243,30 @@ header {
     background-color: #A5A5A5;
 }
 .seta {
-    
-    padding: 20px;
-    font-size: 20px;
+    height: 45px;
+    width: 45px;
     border: 2px solid white;
     border-radius: 50%;
-    color: white;
-    text-align: center;
-    justify-content: center;
 }
 .seta::after {
-    content: "▶";
+    content: "";
+    position: absolute;
+    display: block;
+    height: 25px;
+    width: 25px;
+    background-image: url('imagens/seta.png');
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
 }
 /*venda*/
 #comentarios {
     height: 400px;
     background-color: white;
+    color: black;
 }
 #comentarios span {
     display: inline-block;
@@ -267,14 +284,12 @@ header {
     width: 65%;
     position: absolute;
     right: 0;
-    top: 0;  
-    padding: 100px;
+    top: 0; 
 }
 .comentarios::after {
     content: "";
     height: 60%;
-    filter: sepia(1);
-    border: .5px solid black;
+    border-right: .5px solid black;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -282,16 +297,19 @@ header {
     position: absolute;
 }
 #comentarios p {
-    display: block;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    max-width: 60%;
-    transform: translate(-50%,-50%);
+    text-align: justify;
+    padding: 100px;
     font-size: 20px;
+    position: absolute;
+}
+#comentarios p::after {
+    content: "❞";
+}
+#comentarios p::before {
+    content: "❝";
 }
 .c1,
+.c2,
 .c3 {
     opacity: 0;
 }
@@ -311,29 +329,35 @@ header {
 input[type="radio"] {
     display: none;
 }
-    #i1:checked ~ #comentarios .c1,
-	#i2:checked ~ #comentarios .c2,
-	#i3:checked ~ #comentarios .c3{
+    label {
+        height: 12px;
+        width: 12px;
+        margin: 0px 2px;
+        position: relative;
+        display: block;
+        transition: .4s;
+        cursor: pointer;
+        position: relative;
+        border-radius: 50%;
+    }
+    #i1:checked ~ main .c1,
+	#i2:checked ~ main .c2,
+	#i3:checked ~ main .c3{
         transition: 2s;
 	    transition: visibility 0ms, opacity 1s linear;
         animation: scroll 1s ease-in-out;
-        height: 12px;
-        width: 12px;
-	}
-    label {
+        opacity: 1;
+    }
+    #dot1,
+    #dot2,
+    #dot3 {
         background-color: #000000;
-        color: black;
-        height: 10px;
-        width: 10px;
-		position: relative;
-		display: block;
-		transition: .4s;
-        cursor: pointer;
-        position: relative;
-		border-radius: 50%;
-}
-
-
+    }
+    #i1:checked ~ main #dot1,
+	#i2:checked ~ main #dot2,
+	#i3:checked ~ main #dot3{
+        background-color:  #AB4C46;
+    }
 footer {
     position: relative;
     padding: 80px;
@@ -350,9 +374,23 @@ footer {
 */
 
 
-@media screen and (max-width: 1024px) {
-
-    .captura {
-        width: 90%;
-    }
+@media screen and (max-width: 768px) {
+    nav { width: 90%; top: 15px; }
+        .logo { width: 32px; height: 32px; }
+        nav a { padding: 4px 8px; }
+    .captura { padding-top: 110px; padding-bottom: 80px; width: 90%; }
+        h1, h2, h3 { padding-top: 8px; padding-bottom: 8px; }
+        .captura h1 { font-size: 28px; }
+        .captura h2 { font-size: 18px; }
+        .captura h3 { font-size: 16px; }
+        .input  { height: 50px; }
+            .input a { font-size: 15px; }
+    /*utilitario
+        ul { width: 90%; }
+    */
+    /*main*/
+    /*venda*/
+    #comentarios span { font-size: 16px; }
+    #comentarios p { padding: 60px 20px; font-size: 12px; }
+        label { height: 16px; width: 16px; }
 }
