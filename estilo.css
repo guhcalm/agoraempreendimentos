@@ -138,6 +138,7 @@ header {
         }
             input[type=email] {
                 position: absolute;
+                outline: none;
                 padding: 10px;
                 left: 0;
                 height: 100%;
@@ -377,7 +378,7 @@ footer {
     nav { width: 90%; top: 15px; }
         .logo { width: 32px; height: 32px; }
         nav a { padding: 4px 8px; }
-    .captura { padding-top: 110px; padding-bottom: 80px; width: 90%; }
+    .captura { padding-top: 120px; padding-bottom: 70px; width: 90%; }
         h1, h2, h3 { padding-top: 8px; padding-bottom: 8px; }
         .captura h1 { font-size: 28px; }
         .captura h2 { font-size: 18px; }
@@ -388,7 +389,7 @@ footer {
         ul { width: 90%; }
     */
     /*main*/
-    #video{ height: 250px; }
+    #video{ height: 200px; }
     /*venda*/
     #comentarios span { font-size: 16px; }
     #comentarios p { padding: 60px 20px; font-size: 12px; }
