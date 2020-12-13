@@ -282,7 +282,6 @@ header {
     position: absolute;
 }
 #comentarios p {
-    
     display: block;
     width: 100%;
     position: relative;
@@ -290,9 +289,9 @@ header {
     left: 50%;
     max-width: 60%;
     transform: translate(-50%,-50%);
+    font-size: 20px;
 }
 .c1,
-.c2,
 .c3 {
     opacity: 0;
 }
