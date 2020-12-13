@@ -105,8 +105,8 @@ header {
         }
     .captura {
         margin: auto;
-        padding-top: 220px;
-        padding-bottom: 100px;
+        padding-top: 150px;
+        padding-bottom: 70px;
         z-index: 2;
         text-align: center;
         color: white;
@@ -183,9 +183,11 @@ header {
         bottom: 0;
         right: 0;
         left: 0;
+        /*
         background: #202020;
         opacity: 0.25;
-        /*
+        */
+        
         background: rgba(0,0,0,.5);
         background-image: -webkit-gradient(linear,left bottom,left top,color-stop(50%,rgba(0,0,0,0)),to(rgba(0,0,0,.7))),radial-gradient(50% 100%,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%);
         background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%),-webkit-radial-gradient(50% 100%,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%);
@@ -199,7 +201,7 @@ header {
         background-image: -moz- oldlinear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
         background-image: -o-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
         background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
-    */    
+      
     }
         
 /*utilitario
@@ -359,6 +361,7 @@ input[type="radio"] {
 	#i2:checked ~ main #dot2,
 	#i3:checked ~ main #dot3{
         background-color:  #AB4C46;
+        opacity: .5;
     }
 footer {
     position: relative;
