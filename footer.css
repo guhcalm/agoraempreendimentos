@@ -1,0 +1,22 @@
+footer {
+    position: relative;
+    padding: 80px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    background: transparent;
+}
+footer div {
+    min-height: 10px;
+    min-width: 10px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+footer img {
+    height: 39px;
+    width: 39px;
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+/*
