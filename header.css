@@ -12,7 +12,7 @@ header {
 */
 }
     #navHome {
-        z-index: 2;
+        z-index: 20;
         top: 28px;
         width: 92%;
         margin: auto;
@@ -46,7 +46,8 @@ header {
             background-size: cover;
         }
         nav a {  
-            display: inline-block;
+            z-index: 10;
+            display: block;
             position: absolute;
             padding: 7px 17px;
             background-color: #e50914;
@@ -58,7 +59,7 @@ header {
         #navHome a { top: 0px; right: 0px; }
         #navUsuario a { top: 28px; right: 4%; }
     #navUsuario {
-        z-index: 2;
+        z-index: 20;
         top: 0px;
         width: 100%;
         padding: 28px 4% 28px 4%;
