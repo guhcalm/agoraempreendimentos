@@ -12,6 +12,7 @@
     height: 350px;
     background-color: #A5A5A5;
     width: 100%;
+    overflow: hidden;
 }
 .video {
     text-align: center;
