@@ -10,10 +10,38 @@
     <title>Document</title>
 </head>
 <body>
+<!--info-->
+<div id="about">
+    <div style="background-color: white; width:100%; height:100%;padding: 40px;">
+    <h2>SOBRE NÓS</h2>
+    <p></p>
+    </div>
+</div>
+<!--info-->
+<!--Info-->
+    <div id="infoAbrir"><span></span></div>
+    <!---->
+    <div id="infoFechar"><span></span></div>
+<!--Info-->
+<script>
+    window.addEventListener('load', function(){
+        var about = document.getElementById('about');
+        var infoFechar = document.getElementById('infoFechar');
+        var infoAbrir = document.getElementById('infoAbrir');
+        
+        infoAbrir.addEventListener("click",function(){
+                    about.style.visibility = "visible";
+                    infoFechar.style.visibility = "visible";
+                    infoAbrir.style.visibility = "hidden";
+                })
+        infoFechar.addEventListener("click",function(){
+                    about.style.visibility = "hidden";
+                    infoFechar.style.visibility = "hidden";
+                    infoAbrir.style.visibility = "visible";
+        })
+    });
+</script>
 
-<input id="i1" type="radio" name="comentario" checked>
-<input id="i2" type="radio" name="comentario">
-<input id="i3" type="radio" name="comentario">
 <!--header-->
     <header>
     <!--nav-->
