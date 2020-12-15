@@ -50,6 +50,7 @@
     width: 100%;
     background-color: white;
     color: black;
+    overflow: hidden;
 }
 #comentarios .Nossamensagem {
     display: inline-block;
@@ -68,6 +69,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    overflow: hidden;
 }
 .comentarios::after {
     content: "";
