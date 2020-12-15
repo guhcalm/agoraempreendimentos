@@ -8,6 +8,7 @@
 #video6,
 #video7
 { 
+    cursor: pointer;
     text-align: center;
     height: 350px;
     background-color: #A5A5A5;
@@ -15,6 +16,7 @@
     overflow: hidden;
 }
 .video {
+    cursor: pointer;
     text-align: center;
     background-color: #A5A5A5;
     max-height: 300px;max-width: 400px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);
@@ -174,8 +176,15 @@ input[type="radio"] {
 /*Responsividade*/
 @media screen and (max-width: 768px) {
     /*main*/
-    #video{ height: 200px; }
-    .video { height: 90%; width: 100%; }
+    #video1,
+    #video2,
+    #video3,
+    #video4,
+    #video5,
+    #video6,
+    #video7
+    { height: 200px; }
+    .video { max-height: 90%; max-width: 100%; }
     #videoVendas { padding: 25px 5px; }
     /*venda*/
     #comentarios .Nossamensagem { font-size: 16px; }
