@@ -32,6 +32,8 @@
         var about = document.getElementById('about');
         var infoFechar = document.getElementById('infoFechar');
         var infoAbrir = document.getElementById('infoAbrir');
+        var iframe1 = document.getElementById('iframe1');
+        var video1 = document.getElementById('video1');
         
         infoAbrir.addEventListener("click",function(){
                     about.style.visibility = "visible";
@@ -42,6 +44,27 @@
                     about.style.visibility = "hidden";
                     infoFechar.style.visibility = "hidden";
                     infoAbrir.style.visibility = "visible";
+        })
+        video1.addEventListener("click",function(){
+                    iframe1.style.visibility = "visible";
+        })
+        video2.addEventListener("click",function(){
+                    iframe2.style.visibility = "visible";
+        })
+        video3.addEventListener("click",function(){
+                    iframe3.style.visibility = "visible";
+        })
+        video4.addEventListener("click",function(){
+                    iframe4.style.visibility = "visible";
+        })
+        video5.addEventListener("click",function(){
+                    iframe5.style.visibility = "visible";
+        })
+        video6.addEventListener("click",function(){
+                    iframe6.style.visibility = "visible";
+        })
+        video7.addEventListener("click",function(){
+                    iframe7.style.visibility = "visible";
         })
     });
 </script>
@@ -87,8 +110,9 @@ conteudo-->
 
     <main>
     <!--visibility-->
-        <section id="video" class="limite">
+        <section id="video1" class="limite">
             <span class="seta"></span>
+            <iframe id="iframe1" src="https://www.youtube.com/embed/mDbA3EZme4c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     <!--visibility-->
     <!--comentarios-->

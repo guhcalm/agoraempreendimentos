@@ -1,6 +1,13 @@
 /*main*/
 /*video*/
-#video{ 
+#video1,
+#video2,
+#video3,
+#video4,
+#video5,
+#video6,
+#video7
+{ 
     text-align: center;
     height: 350px;
     background-color: #A5A5A5;
@@ -8,13 +15,8 @@
 }
 .video {
     text-align: center;
-    height: 300px;
     background-color: #A5A5A5;
-    width: 400px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    max-height: 300px;max-width: 400px;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);
 }
 #videoVendas { padding: 20px 25%; }
 .seta {
@@ -158,10 +160,12 @@ input[type="radio"] {
 .l {
     height: 95%;
     left: 2%;
+    cursor: pointer;
 }
 .r {
     height: 50px;
     right: 2%;
+    cursor: pointer;
 }
 
 /*Responsividade*/
